@@ -1,0 +1,76 @@
+.tecnicals {
+
+  @include breakpoint-down("small") {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem 2rem 0rem 2rem;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+    font-size: 1.5rem;
+    
+    @include breakpoint-down("small") {
+      position: unset;
+      font-size: 1rem;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+  }
+
+  &__html {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    color: #ff7675;
+  }
+
+  &__css {
+    position: absolute;
+    color: #A29BFE;
+    top: 40%;
+    left: 24%;
+  }
+
+  &__webpack {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    color: rgb(236, 18, 164);
+    text-transform: capitalize;
+  }
+
+  &__javascript {
+    position: absolute;
+    top: 25%;
+    right: 22%;
+    color: #fae31a;
+    text-transform: capitalize;
+  }
+
+  &__typescript {
+    position: absolute;
+    top: 45%;
+    right: 25%;
+    text-transform: capitalize;
+    color: #00B894;
+  }
+
+  &__react {
+    position: absolute;
+    top: 65%;
+    right: 28%;
+    color: #f2f2f2;
+    text-transform: capitalize;
+  }
+
+
+}
